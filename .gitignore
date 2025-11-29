@@ -1,0 +1,19 @@
+# Java / build
+*.class
+/out/
+/build/
+/target/
+/bin/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# TMC internal stuff
+.tmc/
+tmc-*
