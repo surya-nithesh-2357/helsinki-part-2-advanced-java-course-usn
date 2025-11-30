@@ -51,4 +51,22 @@ public class SimpleDate {
         return this.year - other.year - yearRemoved;
     }
 
+    public boolean equals(Object object){
+        if (this == object){
+            // System.out.println("I am at object comparison");
+            return true;
+        }
+        if(! (object instanceof SimpleDate)){
+            return false;
+        }
+        SimpleDate other = (SimpleDate) object;
+        if (this.year == other.year
+                && this.month == other.month
+                && this.day == other.day) {
+            
+            return true;
+        }
+        return false;
+    }
+
 }
