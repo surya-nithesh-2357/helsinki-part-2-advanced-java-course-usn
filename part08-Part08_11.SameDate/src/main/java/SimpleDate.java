@@ -52,8 +52,7 @@ public class SimpleDate {
     }
 
     public boolean equals(Object object){
-        if (this == object){
-            // System.out.println("I am at object comparison");
+        if (this == object){ // Object comparison
             return true;
         }
         if(! (object instanceof SimpleDate)){
