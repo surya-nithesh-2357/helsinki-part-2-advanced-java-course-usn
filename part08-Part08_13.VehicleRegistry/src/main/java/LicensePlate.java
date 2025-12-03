@@ -19,4 +19,24 @@ public class LicensePlate {
         return country + " " + liNumber;
     }
 
+    public boolean equals(Object obj){
+        if (this == obj){
+            return true;
+        }
+
+        if (!(obj instanceof LicensePlate)){
+            return false;
+        }   
+        LicensePlate otherLicensePlate = (LicensePlate) obj;
+        if (otherLicensePlate.country.equals(this.country) && otherLicensePlate.liNumber.equals(this.liNumber)){
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode(){
+        return Objects.hash(this.country,this.liNumber);
+
+    }
+
 }
